@@ -1,12 +1,17 @@
-const elemento = document.getElementById("contenido");
-const botonR = document.getElementById("btn-color-red");
-const botonG = document.getElementById("btn-color-green");
+const gato = {
+  nombre:"tom",
+  duerme: true,
+  edad: 5,
+  enemigos: ["agua", "perros"],
+  get nombreMayuscula(){
+    return this.nombre.toUpperCase();
+  },
+  set agregaEnemigos(nuevoEnemigo){
+    this.enemigos.push(nuevoEnemigo);
+  },
 
-botonR.addEventListener("click", () => {
-  console.log("hiciste click");
-  elemento.style.color = "red";
-})
+};
 
-botonG.addEventListener("click", () =>{
-  elemento.style.color = "green";
-})
+console.log(gato.nombreMayuscula);
+gato.agregaEnemigos = "mouse";
+console.log(gato);
