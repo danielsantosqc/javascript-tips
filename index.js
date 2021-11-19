@@ -1,12 +1,27 @@
-const elemento = document.getElementById("contenido");
-const botonR = document.getElementById("btn-color-red");
-const botonG = document.getElementById("btn-color-green");
+const lista  = document.getElementById("lista");
 
-botonR.addEventListener("click", () => {
-  console.log("hiciste click");
-  elemento.style.color = "red";
-})
+const arrayPaises = ["Peru", "Bolivia", "Colombia"];
 
-botonG.addEventListener("click", () =>{
-  elemento.style.color = "green";
-})
+// ---whit textContent
+// arrayPaises.forEach((pais) => {
+//   const li = document.createElement('li');
+//   li.textContent = pais;
+//   lista.appendChild(li);
+// });
+
+// --- whit innerHTML - CREA REFLOW Y ES PASIVO A SCRIPT INJECTION
+// arrayPaises.forEach((pais) => {
+//     lista.innerHTML += `<li> ${pais}</li>`;
+//   });
+
+
+// ---whit Fragment - recomend
+const fragment = document.createDocumentFragment();
+
+arrayPaises.forEach((pais) => {
+  const li = document.createElement('li');
+  li.textContent = pais;
+  fragment.appendChild(li);
+});
+
+lista.appendChild(fragment);
