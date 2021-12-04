@@ -31,6 +31,11 @@ document.addEventListener("click",(e) => {
     btnAumentar(e);
   }
 
+  // bntFinalizarCompra
+  if(e.target.matches("#mainFooter .card .card-body .btn")){
+    console.log("Finalizar compra");
+    btnFinalizarCompra(e);
+  }
   
 })
 
@@ -124,6 +129,14 @@ const pintarCarrito = (array) =>{
   carrito.appendChild(fragment);
 
   pintarFooter();
+};
+
+const btnFinalizarCompra = () =>{
+ alert(`
+ Sabemos que eres pobre y no puedes comprar estos productos
+ Sabemos que tu es pobre e nao podes compar estes produtos
+ We know that you are poor and cannot buy these products
+ `);
 };
 
 // btnsBotones.forEach((btn) => {

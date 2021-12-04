@@ -1,5 +1,7 @@
 # javascript-tips
 
+# DELEGACION DE EVENTOS
+
 # Ejemplo carrito de compras con objeto, template, templateFooter.
 
 
