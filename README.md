@@ -3,6 +3,7 @@
 # DELEGACION DE EVENTOS
 
 # Ejemplo carrito de compras con objeto, template, templateFooter.
+# Ejemplo en los archivos practice2.html y practice2.js
 
 
 ## template
