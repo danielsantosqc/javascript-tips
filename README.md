@@ -3,7 +3,7 @@
 # DELEGACION DE EVENTOS
 
 # Ejemplo carrito de compras con objeto, template, templateFooter.
-# Ejemplo en los archivos [practice2.html](https://github.com/danielsantosqc/javascript-tips/blob/9-dom-delegacion-de-eventos/practice2.html) y [practice2.js](https://github.com/danielsantosqc/javascript-tips/blob/9-dom-delegacion-de-eventos/practice2.js)
+# Ejemplo en los archivos [index.html](https://github.com/danielsantosqc/javascript-tips/blob/9-dom-delegacion-de-eventos/index.html) y [index.js](https://github.com/danielsantosqc/javascript-tips/blob/9-dom-delegacion-de-eventos/index.js)
 
 
 ## template
