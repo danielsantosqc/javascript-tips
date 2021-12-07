@@ -23,30 +23,39 @@
                     class="form-control mb-2"
                     name="userName"
                     placeholder="Ingrese su nombre"
-                    autocomplete="on"
+                    autocomplete="off"
                     id="userName"
                     type="text"
-                    required
-                    
-                    title="Solo letras"
                     minlength="3"
                     maxlength="10"
+                    required
+                    
+                    title="Solo letras en el nombre"
+                    value="daniel"
                 />
                 <!-- pattern="" -->
+                <p class="text-danger mb-2 d-none" id="alertName">texto de error userName</p>
                 <input
                     class="form-control mb-2"
                     name="userEmail"
                     placeholder="Ingrese su correo"
                     id="userEmail"
-                    autocomplete="on"
+                    autocomplete="off"
                     type="email"
                     required
                    
                     title="Ingresa un email válido"
+                    value="daniel@gmail.com"
                 />
                 <!-- pattern="" -->
+
+                <p class="text-danger mb-2 d-none" id="alertEmail">texto de error userEmail</p>
+                
                 <button class="btn btn-primary" type="submit">Enviar</button>
             </form>
+            <div class="alert alert-success my-2 d-none" id="alertSuccess">
+                <!-- Mensaje enviado con exito!! -->
+            </div>
         </div>
         
 
