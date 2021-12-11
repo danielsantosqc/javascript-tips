@@ -1,7 +1,7 @@
 // console.log("Funcionando");
 
 // const url = "https://jsonplaceholder.typicode.com/posts/";
-const url = "https://pokeapi.co/api/v2/pokemon/ditto";
+const url = "https://rickandmortyapi.com/api/character";
 
 // primera forma
 // fetch(url)
