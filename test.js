@@ -1,7 +1,7 @@
 // console.log("Funcionando");
 
 // const url = "https://jsonplaceholder.typicode.com/posts/";
-const url = "https://rickandmortyapi.com/api/character";
+// const url = "https://rickandmortyapi.com/api/character";
 
 // primera forma
 // fetch(url)
@@ -22,14 +22,14 @@ const url = "https://rickandmortyapi.com/api/character";
 
 
 // segunda forma 
- const findPostById = async (id) =>{
-   try {
-     const res = await fetch(url);
-     const post = await res.json();
-     console.log(post);
-   } catch (error) {
-     console.log(error);
-   }
- }
+//  const findPostById = async (id) =>{
+//    try {
+//      const res = await fetch(url);
+//      const post = await res.json();
+//      console.log(post);
+//    } catch (error) {
+//      console.log(error);
+//    }
+//  }
 
- findPostById();
+//  findPostById();
