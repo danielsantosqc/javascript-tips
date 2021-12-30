@@ -30,7 +30,7 @@ class Persona{
   }
 
   get nombre () {
-    return this._nombre;
+    return this._nombre.toUpperCase();
   }
   set nombre(nombre) {
     this._nombre = nombre;
@@ -44,4 +44,6 @@ class Persona{
 
 const juanito = new Persona ("Juanito");
 juanito.nombre = "Juan";
+console.log(juanito.nombre);
+// console.log(juanito.setnombre());
 console.log(juanito.saludar());
