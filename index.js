@@ -25,8 +25,9 @@
 //solo muda la parte visual  con la palabra class, por dentro es lo mismo
 
 class Persona{
-  constructor(nombre){
+  constructor(nombre,edad){
     this._nombre = nombre;
+    this._edad = edad;
   }
 
   get nombre () {
@@ -40,10 +41,47 @@ class Persona{
   saludar(){
     return `${this.nombre} dice holaaaa...`
   }
+
+  static provarSaludo(nombre){
+    return `${nombre} dice holis`;
+  }
 }
 
-const juanito = new Persona ("Juanito");
-juanito.nombre = "Juan";
-console.log(juanito.nombre);
+
+class Estudiente extends Persona{
+
+  // constructor (nombre, edad, notas =[]){
+  //   super(nombre, edad);
+  //   this._notas = notas;
+  // }
+
+  // dejar  como privado la variable => #, solo permite el acceso con el Get
+  #notas = [];
+
+  saludar(){
+    return(`${this.nombre} desde estudiante`);
+  }
+
+  get notas (){
+    return this.#notas;
+  }
+
+  set notas (nota){
+    this.#notas.push(nota);
+  }
+}
+
+// console.log(Persona.provarSaludo("Danny"));
+// const juanito = new Persona ("Juanito",25);
+// juanito.nombre = "Juan";
+// console.log(juanito.nombre);
 // console.log(juanito.setnombre());
-console.log(juanito.saludar());
+
+// -------------
+const juanito = new Estudiente ("Juanito",25);
+juanito.notas = 7;
+juanito.notas = 4;
+juanito.notas = 9;
+console.log(juanito.notas);
+console.log(juanito);
+
