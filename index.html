@@ -26,9 +26,12 @@ crossorigin="anonymous"
   <div class="container my-5">
     <h1>Todo App</h1>
 
+    <section class="alert alert-danger d-none">Campo vacio..!!!</section>
+
     <form id="formulario">
       <input
         type="text"
+        name="nombre"
         required
         placeholder="Ingrece un Todo"
         class="form-control mb-2"
@@ -60,6 +63,7 @@ crossorigin="anonymous"
     </form>
   </div>
 
+  <!-- template -->
   <template id="templateTodo">
     <article 
       class="
@@ -73,7 +77,6 @@ crossorigin="anonymous"
     <div>
       <button class="btn btn-danger">Borrar</button>
     </div>
-
     </article>  
   </template>  
   
@@ -84,6 +87,7 @@ crossorigin="anonymous"
   <p>Made with love ♥ by <strong>DANIEL Q </strong></p>
 </footer>
 
-<script src="./index.js"></script>
+<!-- <script src="./index.js"></script> -->
+<script src="./app.js"></script>
 </body>
 </html>
