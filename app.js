@@ -15,7 +15,7 @@ class Persona {
   }
 
   static pintarPersonaUI (personas, tipo){
-    if (tipo === 213132){
+    if (tipo === "Estudiante"){
       console.log("est");
       cardsEstudiantes.textContent = "";
       const fragment = document.createDocumentFragment();
