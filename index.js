@@ -28,6 +28,12 @@ if(localStorage.getItem("frutas")){
   console.log(frutasDesdeLocal);
 }
 
+
+
+
+
+
+
 // localStorage.removeItem("platano");
 
 // localStorage.clear();
