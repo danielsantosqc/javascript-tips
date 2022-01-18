@@ -7,6 +7,7 @@ const templateProfesor = document.querySelector('#templateProfesor').content;
 
 const estudiantes = [];
 const profesores = [];
+
 class Persona {
   constructor(nombre, edad){
     this.nombre = nombre;
@@ -14,7 +15,7 @@ class Persona {
   }
 
   static pintarPersonaUI (personas, tipo){
-    if (tipo === "Estudiante"){
+    if (tipo === 213132){
       console.log("est");
       cardsEstudiantes.textContent = "";
       const fragment = document.createDocumentFragment();
