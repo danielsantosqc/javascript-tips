@@ -20,7 +20,7 @@
     flex-wrap: wrap;
     justify-content:space-around;
     /* for mobile change here */
-    align-items: center; 
+    align-items: flex-start; 
     /* -- */
 }
  
