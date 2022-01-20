@@ -48,7 +48,6 @@ const pintarTodos = () => {
 document.addEventListener('click',(e) => {
   // console.log(e.target.dataset.id);
   // console.log(e.target.matches(".btn-danger"));
-
   if (e.target.matches(".btn-danger")){
     arrayTodos = arrayTodos.filter(item => item.id !== e.target.dataset.id);
     pintarTodos();
